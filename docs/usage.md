@@ -1,9 +1,3 @@
----
-layout: docs
-title: Basic Usage
-permalink: /usage/
----
-
 # Basic Usage 📖
 
 ## TUI Interface
