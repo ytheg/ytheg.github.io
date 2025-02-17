@@ -1,12 +1,7 @@
----
-layout: docs
-title: Features
-permalink: /features/
----
-
 # Features 🚀
 
 ## Core Features (Implemented)
+
 ### 📚 Double-Entry Accounting
 - Track debits/credits with precision.
 - Supports multi-currency transactions.
@@ -30,20 +25,9 @@ permalink: /features/
 ---
 
 ## Upcoming Features (Under Development)
+
 ### 🌐 Non-Custodial Wallet Integration
 - Manage crypto assets (inspired by **Trust Wallet Core**).
 - Cold storage key management (C-only implementation).
 
 ### 🚧 Work-in-Progress
-```plaintext
-- Concurrency daemon (2024 Q1)
-- Network utilities (2024 Q2)
-- Natural Language Query Interface (2024 Q3)
-```
-
----
-
-## Why "Super Stupid"?
-- **KISS Principle**: No abstraction layers.
-- <5000 lines of C code (excluding dependencies).
-- Single binary deployment.
