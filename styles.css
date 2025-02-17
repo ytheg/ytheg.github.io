@@ -1,4 +1,4 @@
-/* Theme variables */
+/* Existing CSS (unchanged) */
 :root {
   /* Dark theme (default) */
   --bg-color: #1a1a1a;
@@ -292,29 +292,63 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-links {
-    gap: 1.5rem;
+  /* Navigation */
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
   }
-  
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .theme-toggle {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Hero section */
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Cards */
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Documentation */
   .doc-container {
     grid-template-columns: 1fr;
   }
-  
+
   .sidebar {
     border-right: none;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
   }
-  
-  .hero h1 {
-    font-size: 2rem;
-  }
-  
-  .hero p {
-    font-size: 1.1rem;
-  }
-  
+
+  /* Footer */
   .footer-content {
     flex-direction: column;
     gap: 1rem;
@@ -323,17 +357,26 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .nav-container {
-    flex-direction: column;
-    gap: 1rem;
+  /* Hero section */
+  .hero h1 {
+    font-size: 1.8rem;
   }
-  
-  .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
+
+  .hero p {
+    font-size: 0.9rem;
   }
-  
-  .button {
-    text-align: center;
+
+  /* Cards */
+  .card {
+    padding: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+  }
+
+  /* Code blocks */
+  pre code {
+    padding: 0.8rem;
   }
 }
