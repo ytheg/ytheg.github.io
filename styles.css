@@ -6,6 +6,7 @@
   --border-color: #404040;
   --header-bg: #2a2a2a;
   --card-bg: #2a2a2a;
+  --footer-bg: #2a2a2a;
 }
 
 * {
@@ -19,6 +20,9 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -30,8 +34,9 @@ body {
 /* Navigation */
 nav {
   background-color: var(--header-bg);
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2rem;
 }
 
 .nav-container {
@@ -41,7 +46,7 @@ nav {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: var(--text-color);
   text-decoration: none;
@@ -49,13 +54,14 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav-links a {
   color: var(--link-color);
   text-decoration: none;
   transition: color 0.3s;
+  font-size: 1.1rem;
 }
 
 .nav-links a:hover {
@@ -64,28 +70,90 @@ nav {
 
 /* Main content */
 main {
-  padding: 2rem 0;
+  flex: 1;
+  padding: 2rem 0 4rem 0;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+  background-color: var(--header-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: var(--link-color);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.button {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s;
+}
+
+.button-primary {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+.button:hover {
+  background-color: var(--border-color);
+  color: var(--text-color);
 }
 
 /* Cards */
 .card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
   border-radius: 4px;
+}
+
+.card h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.card ul {
+  list-style-position: inside;
+  margin-left: 1rem;
+}
+
+.card li {
+  margin-bottom: 0.8rem;
 }
 
 /* Documentation specific */
 .doc-container {
   display: grid;
   grid-template-columns: 250px 1fr;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .sidebar {
   border-right: 1px solid var(--border-color);
-  padding-right: 1rem;
+  padding-right: 1.5rem;
 }
 
 .doc-content {
@@ -99,32 +167,70 @@ main {
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
 }
 
 input, textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.8rem;
   background-color: var(--header-bg);
   border: 1px solid var(--border-color);
   color: var(--text-color);
   font-family: 'Courier New', monospace;
+  border-radius: 4px;
 }
 
 button {
   background-color: var(--header-bg);
   color: var(--text-color);
   border: 1px solid var(--border-color);
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.5rem;
   cursor: pointer;
   transition: all 0.3s;
+  border-radius: 4px;
+  font-size: 1.1rem;
 }
 
 button:hover {
   background-color: var(--border-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-links a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--text-color);
+}
+
+.footer-info {
+  color: var(--link-color);
+  font-size: 0.9rem;
 }
