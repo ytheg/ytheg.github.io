@@ -18,6 +18,11 @@ async function initDocs() {
         link.style.marginBottom = '1rem';
         link.style.color = 'var(--link-color)';
         link.style.textDecoration = 'none';
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.hash = doc.id;
+            loadContent();
+        });
         nav.appendChild(link);
     });
 
