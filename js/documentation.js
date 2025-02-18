@@ -1,9 +1,14 @@
 // Documentation structure
 const docs = [
     { id: 'getting-started', title: 'Getting Started', file: 'getting_started.md' },
-    { id: 'features', title: 'Features', file: 'features.md' },
+    { id: 'features', title: 'Key Features', file: 'features.md' },
     { id: 'installation', title: 'Installation', file: 'installation.md' },
     { id: 'usage', title: 'Usage Guide', file: 'usage.md' },
+    { id: 'projectstructure', title: 'Project Structure', file: 'project_structure.md' },
+    { id: 'development', title: 'Development Guide', file: 'development_guide.md' },
+    { id: 'license', title: 'License', file: 'license.md' },
+    { id: 'reference', title: 'References', file: 'ref.md' },
+    { id: 'roadmap', title: 'Road Map', file: 'roadmap.md' },
 ];
 
 // Initialize documentation page

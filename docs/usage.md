@@ -1,6 +1,16 @@
-# Basic Usage 📖
+---
 
-## TUI Interface
+#### **4. Usage Guide**  
+- **Schema Files**: Define database structures using `.sch` files, compiled by `ddl_compiler` .  
+- **TUI Operations**:  
+  - Navigate menus using keyboard inputs.  
+  - Perform CRUD operations on financial entries.  
+  - View dynamic table presentations of data.  
+- **Error Logging**: Check `logfile.c/h` for debugging and error tracking.  
+
+---
+
+### TUI Interface
 ```
 +---------------------------------------+
 | Accounts    Transactions    Reports   | <-- Menu
@@ -12,7 +22,7 @@
 +---------------------------------------+
 ```
 
-## Key Commands
+### Key Commands
 | Key Combination       | Action                          |
 |-----------------------|---------------------------------|
 | `F2`                  | Create new account/transaction  |
@@ -20,7 +30,7 @@
 | `Ctrl+A`              | Add journal entry               |
 | `Ctrl+D`              | Delete selected item            |
 
-## Compiling Schemas
+### Compiling Schemas
 1. Create schema file (`accounting.sch`):
 ```sql
 TABLE Accounts (
@@ -35,7 +45,7 @@ TABLE Accounts (
 ./ddl_compiler accounting.sch ~/bookkeeper_db
 ```
 
-## Limitations (Current Development)
+### Limitations (Current Development)
 - ❌ No undo/redo functionality
 - ❌ Wallet integration incomplete
 - ❌ No CSV export (coming v0.2)
