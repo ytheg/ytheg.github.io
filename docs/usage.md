@@ -1,4 +1,6 @@
-#### **4. Usage Guide**  
+4. Usage Guide
+=================
+
 - **Schema Files**: Define database structures using `.sch` files, compiled by `ddl_compiler` .  
 - **TUI Operations**:  
   - Navigate menus using keyboard inputs.  
@@ -6,7 +8,7 @@
   - View dynamic table presentations of data.  
 - **Error Logging**: Check `logfile.c/h` for debugging and error tracking.  
 
----
+
 
 ### TUI Interface
 ```
@@ -47,5 +49,3 @@ TABLE Accounts (
 - ❌ No undo/redo functionality
 - ❌ Wallet integration incomplete
 - ❌ No CSV export (coming v0.2)
-
----

@@ -1,4 +1,6 @@
-#### **3. Installation**  
+3. Installation
+================
+
 **Prerequisites**:  
 - GCC compiler  
 - `ncurses` and `panel` libraries  
@@ -27,5 +29,3 @@
    ```bash  
    ./bookkeeper /path/to/database  
    ```
-
----
