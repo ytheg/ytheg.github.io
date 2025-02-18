@@ -47,3 +47,5 @@ TABLE Accounts (
 - ❌ No undo/redo functionality
 - ❌ Wallet integration incomplete
 - ❌ No CSV export (coming v0.2)
+
+---

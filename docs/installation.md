@@ -26,6 +26,6 @@
 4. Run the program:  
    ```bash  
    ./bookkeeper /path/to/database  
-   ```  
+   ```
 
 ---
