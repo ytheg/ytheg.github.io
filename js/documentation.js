@@ -1,6 +1,6 @@
 // Documentation structure
 const docs = [
-    { id: 'getting-started', title: 'Getting Started', file: 'getting-started.md' },
+    { id: 'getting-started', title: 'Getting Started', file: 'getting_started.md' },
     { id: 'features', title: 'Features', file: 'features.md' },
     { id: 'installation', title: 'Installation', file: 'installation.md' },
     { id: 'usage', title: 'Usage Guide', file: 'usage.md' },
