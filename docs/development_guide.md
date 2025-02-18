@@ -1,5 +1,3 @@
----
-
 #### **6. Development Guide**  
 - **Modular Design**: Extend functionality by adding modules for concurrency, networking, or NLP .  
 - **Planned Features**:  

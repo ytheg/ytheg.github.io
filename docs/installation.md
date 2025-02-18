@@ -1,5 +1,3 @@
----
-
 #### **3. Installation**  
 **Prerequisites**:  
 - GCC compiler  

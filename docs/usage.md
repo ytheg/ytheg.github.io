@@ -1,5 +1,3 @@
----
-
 #### **4. Usage Guide**  
 - **Schema Files**: Define database structures using `.sch` files, compiled by `ddl_compiler` .  
 - **TUI Operations**:  

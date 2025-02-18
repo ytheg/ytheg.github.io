@@ -1,5 +1,3 @@
----
-
 #### **8. References**  
 - **Inspirations**:  
   - AI Stevens (database design)  

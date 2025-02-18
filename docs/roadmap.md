@@ -1,5 +1,3 @@
----
-
 #### **9. Roadmap**  
 - **Short-Term**: Enhance TUI for accounting operations and dynamic table rendering.  
 - **Long-Term**: Integrate multiuser support, caching, and wallet utilities .  

@@ -1,5 +1,3 @@
----
-
 #### **2. Key Features**    
 - **Double-Entry Accounting**: Tracks debits and credits with precision.  
 - **Custom DBMS**: Built from scratch using AI Stevens' database design principles, supporting CRUD operations.  
